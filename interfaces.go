@@ -1,4 +1,4 @@
-package go_persistence
+package persistence
 
 type ObjectPersisterInterface interface {
 	SaveItem(key string, obj interface{}) error

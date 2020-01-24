@@ -1,4 +1,4 @@
-package go_persistence
+package persistence
 
 import (
 	"encoding/json"
