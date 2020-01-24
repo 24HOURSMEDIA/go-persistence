@@ -8,7 +8,7 @@ type Obj struct {
 	TestVal   string `json:"test_val"`
 }
 
-const path = "/tmp/test"
+const path = "./tmp/test"
 
 func TestNewJsonObjectPersister(t *testing.T) {
 	persister, err := NewJsonObjectPersister(JsonObjectPersisterConfig{Path: path})

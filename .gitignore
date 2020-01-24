@@ -1,7 +1,10 @@
 
-!/**/.gitkeep
+
 /tmp
 
 
 .idea
+
+!/**/.gitkeep
+
 
