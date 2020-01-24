@@ -22,14 +22,13 @@ const path = "/tmp/path"
 
 persister, _ := persistence.NewJsonObjectPersister(JsonObjectPersisterConfig{Path: path, Prefix: "obj_"})
 
-
-
+// write an item
 item := Obj{StringVal: "A string", IntVal: 5}
 _ := persister.SaveItem("test1, &item)
 
-// reads an item with a key
+// reads an item by key
 retrievedItem = Obj{}
-_ := persister.GetItem("test1", &item)
+_ := persister.GetItem("test1", &retrievedItem)
 
 
 keys := persister.AllKeys()
