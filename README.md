@@ -34,3 +34,10 @@ _ := persister.GetItem("test1", &retrievedItem)
 keys := persister.AllKeys()
 // [test1, test2]
 ```
+
+Sample json file:
+
+{PATH}/{PREFIX}{key}.json
+```json
+{"string_val":"a string","int_val":0,"test_val":""}
+```
