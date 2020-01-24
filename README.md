@@ -8,6 +8,10 @@ Allows saving objects as json files
 Example:
 
 ```
+import (
+	"github.com/24HOURSMEDIA/go-persistence"
+)
+
 type Obj struct {
 	StringVal string `json:"string_val"`
 	IntVal    int    `json:"int_val"`
@@ -16,7 +20,7 @@ type Obj struct {
 
 const path = "/tmp/path"
 
-persister, _ := NewJsonObjectPersister(JsonObjectPersisterConfig{Path: path, Prefix: "obj_"})
+persister, _ := persistence.NewJsonObjectPersister(JsonObjectPersisterConfig{Path: path, Prefix: "obj_"})
 
 
 
