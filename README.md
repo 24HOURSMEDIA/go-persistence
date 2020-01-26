@@ -41,3 +41,18 @@ Sample json file:
 ```json
 {"string_val":"a string","int_val":0,"test_val":""}
 ```
+
+## Test, bench
+
+run tests
+
+    go test 
+
+run benchmark
+
+    go test -bench=. -benchtime=100x
+    go test -bench=. -benchtime=999x
+    # the queue size is limited to 1000 so this will be slower
+    go test -bench=. -benchtime=2000x
+    
+   
