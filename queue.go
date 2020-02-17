@@ -81,6 +81,7 @@ var queue = queueType{maxSize: 1000, enableLogging: false, loggingInterval: time
 
 func init() {
 	// get status logger
+
 	go func() {
 		for true {
 			if queue.enableLogging {
@@ -94,7 +95,7 @@ func init() {
 	go func() {
 		for true {
 			handleQueue()
-			time.Sleep(time.Microsecond)
+			time.Sleep(time.Millisecond)
 		}
 	}()
 }
